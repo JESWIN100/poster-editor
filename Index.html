@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poster Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="poster-container">
+    <h1>Create Your Poster</h1>
+
+    <!-- Image upload -->
+    <label for="personImage">Upload Image:</label>
+    <input type="file" id="personImage" accept="image/*">
+
+    <!-- Name input -->
+    <label for="personName">Your Name:</label>
+    <input type="text" id="personName" placeholder="Enter your name">
+
+    <!-- Buttons -->
+    <div class="button-group">
+      <button id="generateBtn">Generate Poster</button>
+      <button id="downloadBtn">Download Poster</button>
+    </div>
+
+    <!-- Canvas -->
+    <canvas id="posterCanvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

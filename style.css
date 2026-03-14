@@ -1,0 +1,91 @@
+body {
+  font-family: "Helvetica", Arial, sans-serif;
+  background: #111;
+  color: #eee;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.poster-container {
+  max-width: 600px;
+  margin: auto;
+  background: #222;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 12px 5px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff5722;
+  color: white;
+  transition: background 0.3s;
+  flex: 1;
+}
+
+button:hover {
+  background: #e64a19;
+}
+
+canvas {
+  margin-top: 15px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .poster-container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
